@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic,500italic,700italic");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu';
+    height: 100vh;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 20rem;
+    border: 2px solid black ;
+    box-shadow: 0px 5px 5px 1px #888888;
+
+    .option_{
+        margin-top: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        select {
+            width: 250px;
+            border: 1px solid black ;
+            font-size: 'Ubuntu';
+          
+        }
+    }
+    .emoji{
+        font-size: 5rem;
+    }
+    .title{
+        margin-top: 1rem;
+        font-size:1rem
+    }
+    .child_box{
+        margin-top: 1rem ;
+        background-color: orange;
+        width: 2rem;
+        height: 2rem ;
+    }
+
+   .list{
+      
+        // overflow-y: scroll;
+        // overflow-x: hidden;
+        // border: 1px solid black;
+        margin-top: 1rem;
+        overflow-y: scroll;
+
+        width: 100%;
+        height: auto;
+   }
+    #text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+    
+    .university{
+        background-color: rgb(242, 213, 252);
+        width: 6rem;
+        height: 5rem;
+        font-size: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+        // border-radius: 5px;
+        // gap: .5rem;
+    }
+    #loading-spinner {
+        border: 8px solid rgba(0, 0, 0, 0.1);
+        border-top-color: #1845f7;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s ease-in-out infinite;
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+        display: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+      
+      }
+      
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+}
